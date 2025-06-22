@@ -1,0 +1,14 @@
+Las PropTypes en React son una herramienta para validar los tipos de las propiedades
+(props) que un componente recibe. Ayudan a detectar errores durante el desarrollo, 
+asegurando que los componentes reciban los datos en el formato esperado.
+
+Por ejemplo, si esperas que una prop llamada nombre sea un string, puedes usar 
+PropTypes para advertir si alguien pasa un número u otro tipo de dato.
+
+Ventajas:
+
+Facilitan el mantenimiento y la colaboración.
+Ayudan a prevenir bugs por tipos incorrectos.
+Mejoran la documentación del componente.
+Nota: PropTypes solo funcionan en desarrollo, no en producción.
+ Para validaciones más estrictas, puedes considerar TypeScript.

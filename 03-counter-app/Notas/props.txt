@@ -1,0 +1,30 @@
+Las props (abreviatura de "properties") en React son un mecanismo para pasar datos de
+un componente padre a un componente hijo. Son inmutables, lo que significa que no se pueden 
+modificar directamente desde el componente hijo. Las props permiten que los componentes sean reutilizables
+y dinámicos al recibir diferentes valores.
+
+Por ejemplo:
+
+import React from 'react';
+
+function Saludo(props) {
+  return <h1>Hola, {props.nombre}!</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Saludo nombre="Juan" />
+      <Saludo nombre="María" />
+    </div>
+  );
+}
+
+export default App;
+
+
+En este ejemplo:
+
+El componente Saludo recibe una prop llamada nombre.
+El componente App pasa diferentes valores a nombre al usar Saludo.
+Esto permite que el componente Saludo sea reutilizable con diferentes datos.
